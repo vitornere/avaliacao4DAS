@@ -1,0 +1,28 @@
+﻿a/b) Stub e Skeleton
+
+Os Stubs recebem os parâmetros dos métodos exportados pelo objecto remota 
+(definidas pela interface da classe remota) e reencaminham-nos para o lado 
+do servidor onde serão interpretados por uma instância de uma classe Skeleton. 
+O Skeleton recebe os parâmetros enviados pelo Stub e executa as respectivas 
+chamadas no objecto remoto. Em sentido inverso, os Skeletons são também 
+responsáveis por receber o valor de retorno do método remoto (local na sua 
+perspectiva) e direcioná-los para os Stubs dos clientes correspondentes.
+
+Relacionam-se com o framework de componentes por possuir o papel bem definito: gerenciamento 
+de transações e comunicação assíncrona.
+
+c) Registro é o modo como o diponibilizam os objetos remotos para que os clientes consigam realizar chamanda 
+de método, ou seja, o registro guarda objetos do servidor para serem acessiveis ao cliente.
+
+d) Serialização (marshalling e unmarshalling) e invocação remota de métodos
+
+Serialização é uma representação binária reversível que preserva informações da classe e
+estado dos seus dados.
+
+Invocação remota de métodos permite que o comportamento de upload do cliente a partir do 
+servidor com uma simples invocação de método, fornecendo uma maneira flexível de transferir 
+a computação do servidor para os clientes e, ao mesmo tempo, fornecer aos usuários um 
+feedback mais rápido.
+
+Relaciona-se com o modelo de componentes, por esse ser resposável por
+definir a forma de iteração entre os componentes e entre os componentes e o framework.
